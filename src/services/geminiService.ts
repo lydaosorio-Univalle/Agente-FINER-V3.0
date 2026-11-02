@@ -9,9 +9,9 @@ export async function sendMessageToGemini(
   const ai = new GoogleGenAI({ apiKey });
   
   // Determine temperature based on phase
-  let temperature = 0.7;
+  let temperature = 0.8;
   if (currentState === AppState.PHASE2 || currentState === AppState.PHASE3) {
-    temperature = 0.3;
+    temperature = 0.6;
   }
 
   const systemMessage = history.find(m => m.role === 'system');
