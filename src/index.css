@@ -58,3 +58,8 @@
 .markdown-body ul {
   @apply list-disc pl-6 mb-4;
 }
+    
+/* Espaciado para PWA en teléfonos con Notch / Dynamic Island */
+header, nav, body {
+  padding-top: max(1rem, env(safe-area-inset-top));
+}
