@@ -363,7 +363,7 @@ export default function App() {
                       </div>
                     ))}
                   </div>
-                  <p className="text-sm font-medium text-on-surface-variant">Únete a más de 1,200 investigadores académicos.</p>
+                  <p className="text-sm font-medium text-on-surface-variant">Únete a la comunidad de investigadores académicos.</p>
                 </div>
               </div>
 
@@ -814,7 +814,7 @@ export default function App() {
             <a href="#" className="hover:text-primary transition-colors">Soporte</a>
           </div>
           <p className="text-xs text-on-surface-variant/60">
-            © 2026 Agente FINER v1.0 por Lyda Osorio TGHN y Universidad del Valle Colombia
+            © 2026 Agente FINER v3.0 por Lyda Osorio TGHN y Universidad del Valle Colombia
           </p>
         </div>
       </footer>
