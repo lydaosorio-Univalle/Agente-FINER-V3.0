@@ -265,16 +265,16 @@ export default function App() {
     (m.parts[0].text.includes('RQ1') && m.parts[0].text.includes('RQ2') && m.parts[0].text.includes('RQ3'))
   );
 
-  return (
+ return (
     <div className="min-h-screen flex flex-col">
       {/* Top Bar */}
-      <nav className="bg-background/80 backdrop-blur-xl sticky top-0 z-50 flex justify-between items-center px-6 py-4 w-full border-b border-outline-variant/10">
-        <div className="flex items-center gap-3">
+      <nav className="bg-background/80 backdrop-blur-xl sticky top-0 z-50 flex flex-wrap items-center gap-x-3 gap-y-2 px-4 sm:px-6 py-3 sm:py-4 w-full border-b border-outline-variant/10 sm:flex-nowrap">
+        <div className="flex items-center gap-3 mr-auto">
           <Brain className="text-primary w-6 h-6" />
           <h1 className="text-xl font-bold tracking-tight text-primary font-headline">Agente FINER</h1>
         </div>
         
-        <div className="flex items-center gap-4">
+        <div className="contents sm:flex sm:items-center sm:gap-4">
           {state !== AppState.LANDING && (
             <button 
               onClick={handleExit}
@@ -285,7 +285,7 @@ export default function App() {
               <span className="hidden sm:inline">Salir</span>
             </button>
           )}
-          <div className="hidden sm:flex items-center gap-2 bg-surface-container-high px-3 py-1.5 rounded-lg border border-outline-variant/20 relative">
+          <div className="order-last w-full sm:order-none sm:w-auto flex items-center gap-2 bg-surface-container-high px-3 py-1.5 rounded-lg border border-outline-variant/20 relative">
             <div className="flex items-center gap-1">
               <span className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">API Key</span>
               <button 
@@ -321,7 +321,7 @@ export default function App() {
               type="password" 
               value={apiKey}
               onChange={(e) => setApiKey(e.target.value)}
-              className="bg-transparent border-none focus:ring-0 text-xs w-32 p-0"
+              className="bg-transparent border-none focus:ring-0 text-xs flex-1 min-w-0 sm:flex-none sm:w-32 p-0"
               placeholder="Ingrese su clave..."
             />
           </div>
